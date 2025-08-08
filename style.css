@@ -1,0 +1,150 @@
+body {
+  background: #181a20;
+  color: #f8f8f2;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+}
+#top-box {
+  display: flex;
+  gap: 16px;
+  padding: 18px 24px;
+  background: #23243a;
+  border-bottom: 2px solid #444;
+}
+#top-box button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#top-box button:hover {
+  background: #217dbb;
+}
+#center-box {
+  padding: 32px;
+}
+.class-box {
+  background: #23243a;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 0 0 18px 0;
+}
+.class-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2d2f4a;
+  border-radius: 12px 12px 0 0;
+  padding: 18px 24px 12px 24px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.class-name {
+  flex-grow: 1;
+}
+
+.class-buttons {
+  display: flex;
+  gap: 8px;
+}
+.class-title button {
+  background: #2ecc40;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.95em;
+  cursor: pointer;
+  margin-left: 12px;
+}
+.class-title button:hover {
+  background: #27ae60;
+}
+.event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 24px;
+}
+.event-item {
+  background: #23243a;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 14px 18px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+}
+.event-type {
+  font-weight: bold;
+  color: #e67e22;
+  font-size: 1em;
+}
+.event-dates {
+  font-size: 0.98em;
+  color: #aaa;
+}
+
+/* Event completed (checked) style */
+.event-completed {
+  opacity: 0.6;
+}
+.event-completed .event-name {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+/* Event main content (checkbox, name, dates) */
+.event-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Delete button for events */
+.event-delete-btn {
+  background: #e74c3c !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 1.1em;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+.event-delete-btn:hover {
+  background: #c0392b !important;
+}
+
+/* Checkbox alignment and size */
+.event-check {
+  vertical-align: middle;
+  accent-color: #2ecc40;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  min-height: 26px;
+  margin-right: 8px;
+  cursor: pointer;
+}
